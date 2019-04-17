@@ -1,0 +1,6 @@
+-- Query para identificar um campo nas tabelas do banco de dados Oracle
+
+SELECT *
+  FROM all_tab_columns
+WHERE upper(column_name)  LIKE '%nome_campo%'
+ORDER BY OWNER, TABLE_NAME
